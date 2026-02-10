@@ -1,0 +1,28 @@
+nohup: ignoring input
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+🔧 GPU Status:
+   ✅ CUDA Available
+   🎮 GPU: NVIDIA RTX A6000
+   �� Memory: 47.4GB
+
+⚙️  Settings:
+   - Check last 7 days
+   - Model: large-v3
+   - Device: cuda
+   - Compute Type: float16
+   - Output: /mnt/home_dnlab/jhjung/radio/transcripts
+
+📦 Loading Whisper model: large-v3 on cuda
+   ✅ Model loaded!
+
+🔍 Checking last 7 days...
+
+🔍 20260106: Checking... ❌ Not found (status: 404)
+🔍 20260105: Checking... ❌ Not found (status: 404)
+🔍 20260104: Checking... ❌ Not found (status: 404)
+🔍 20260103: Checking... ❌ Not found (status: 404)
+🔍 20260102: Checking... ❌ Not found (status: 404)
+🔍 20260101: Checking... ❌ Not found (status: 404)
+🔍 20251231: Checking... ❌ Not found (status: 404)
+
+✅ No new files to process

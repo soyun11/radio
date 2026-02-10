@@ -1,0 +1,398 @@
+📥 Loading CSV...
+   Columns: ['Start Time', 'Stop Time', 'Duration', 'Type', 'MP3 File', 'Transcript File', 'Transcript']
+   First row: {'Start Time': 4.01, 'Stop Time': 8.47, 'Duration': 4.46, 'Type': 'speech', 'MP3 File': nan, 'Transcript File': nan, 'Transcript': '생명존중을 실천하는 위더스 제약에서 6시를 알려드립니다.'}
+   Total: 1350 segments
+
+📥 Loading Diarization...
+   Total: 1686 speaker segments
+   Speakers: ['SPEAKER_00', 'SPEAKER_01', 'SPEAKER_02', 'SPEAKER_03', 'SPEAKER_04', 'SPEAKER_05', 'SPEAKER_06', 'SPEAKER_07', 'SPEAKER_08', 'SPEAKER_09', 'SPEAKER_10', 'SPEAKER_11', 'SPEAKER_12', 'SPEAKER_13', 'SPEAKER_14', 'SPEAKER_15', 'SPEAKER_16', 'SPEAKER_17', 'SPEAKER_18', 'SPEAKER_19', 'SPEAKER_20', 'SPEAKER_21', 'SPEAKER_22', 'SPEAKER_23', 'SPEAKER_24', 'SPEAKER_25', 'SPEAKER_26', 'SPEAKER_27', 'SPEAKER_28', 'SPEAKER_29', 'SPEAKER_30', 'SPEAKER_31', 'SPEAKER_32', 'SPEAKER_33', 'SPEAKER_34', 'SPEAKER_35', 'SPEAKER_36', 'SPEAKER_37', 'SPEAKER_38', 'SPEAKER_39', 'SPEAKER_40', 'SPEAKER_41', 'SPEAKER_42', 'SPEAKER_43', 'SPEAKER_44', 'SPEAKER_45', 'SPEAKER_46', 'SPEAKER_47', 'SPEAKER_48', 'SPEAKER_49', 'SPEAKER_50', 'SPEAKER_51', 'SPEAKER_52', 'SPEAKER_53', 'SPEAKER_54', 'SPEAKER_55', 'SPEAKER_56', 'SPEAKER_57', 'SPEAKER_58', 'SPEAKER_59', 'SPEAKER_60', 'SPEAKER_61', 'SPEAKER_62', 'SPEAKER_63', 'SPEAKER_64', 'SPEAKER_65', 'SPEAKER_66', 'SPEAKER_67', 'SPEAKER_68']
+
+🔍 Checking 1350 segments for splitting...
+
+📍 Segment 1: [8.5-63.1] 54.6s, Type=silence
+   ✅ Candidate for splitting (music/silence, 54.6s)
+   🔎 Found 12 overlapping speaker segments
+   📊 Speaker stats:
+      SPEAKER_07: 25.91s (first: 40.8)
+      SPEAKER_43: 2.37s (first: 26.6)
+      SPEAKER_46: 1.57s (first: 7.2)
+      SPEAKER_19: 0.36s (first: 13.1)
+   ✅ Major speakers: ['SPEAKER_07']
+      Checking SPEAKER_07: first_start=40.8, range=[11.5, 62.1]
+      ✅ Added split point at 40.8
+   🔪 SPLITTING!
+      → Music: 8.5-40.8
+      → Speech: 40.8-63.1
+
+📍 Segment 21: [146.8-316.7] 169.9s, Type=music
+   ✅ Candidate for splitting (music/silence, 169.9s)
+   🔎 Found 35 overlapping speaker segments
+   📊 Speaker stats:
+      SPEAKER_41: 99.37s (first: 206.5)
+      SPEAKER_30: 3.17s (first: 256.0)
+      SPEAKER_07: 0.98s (first: 146.3)
+      SPEAKER_27: 0.49s (first: 248.6)
+      SPEAKER_00: 0.41s (first: 233.0)
+   ✅ Major speakers: ['SPEAKER_41', 'SPEAKER_30']
+      Checking SPEAKER_41: first_start=206.5, range=[149.8, 315.7]
+      ✅ Added split point at 206.5
+      Checking SPEAKER_30: first_start=256.0, range=[149.8, 315.7]
+      ✅ Added split point at 256.0
+   🔪 SPLITTING!
+      → Music: 146.8-206.5
+      → Music: 206.5-256.0
+      → Speech: 256.0-316.7
+
+📍 Segment 23: [318.1-364.8] 46.7s, Type=silence
+   ✅ Candidate for splitting (music/silence, 46.7s)
+   🔎 Found 14 overlapping speaker segments
+   📊 Speaker stats:
+      SPEAKER_30: 21.05s (first: 347.0)
+      SPEAKER_41: 12.76s (first: 316.2)
+      SPEAKER_27: 1.15s (first: 331.7)
+      SPEAKER_19: 0.09s (first: 335.5)
+   ✅ Major speakers: ['SPEAKER_41', 'SPEAKER_30']
+      Checking SPEAKER_41: first_start=316.2, range=[321.1, 363.8]
+      ❌ Out of range
+      Checking SPEAKER_30: first_start=347.0, range=[321.1, 363.8]
+      ✅ Added split point at 347.0
+   🔪 SPLITTING!
+      → Music: 318.1-347.0
+      → Speech: 347.0-364.8
+
+📍 Segment 25: [366.2-400.8] 34.6s, Type=silence
+   ✅ Candidate for splitting (music/silence, 34.6s)
+   🔎 Found 6 overlapping speaker segments
+   📊 Speaker stats:
+      SPEAKER_30: 13.96s (first: 355.0)
+      SPEAKER_07: 5.18s (first: 399.2)
+      SPEAKER_27: 1.54s (first: 380.6)
+   ✅ Major speakers: ['SPEAKER_30', 'SPEAKER_07']
+      Checking SPEAKER_30: first_start=355.0, range=[369.2, 399.8]
+      ❌ Out of range
+      Checking SPEAKER_07: first_start=399.2, range=[369.2, 399.8]
+      ✅ Added split point at 399.2
+   🔪 SPLITTING!
+      → Music: 366.2-399.2
+      → Speech: 399.2-400.8
+
+📍 Segment 72: [574.1-623.0] 48.9s, Type=speech
+   ❌ Skip: Type is 'speech' (not music/silence)
+
+📍 Segment 84: [681.3-718.0] 36.7s, Type=silence
+   ✅ Candidate for splitting (music/silence, 36.7s)
+   🔎 Found 14 overlapping speaker segments
+   📊 Speaker stats:
+      SPEAKER_43: 24.31s (first: 680.7)
+      SPEAKER_38: 0.81s (first: 705.6)
+   ✅ Major speakers: ['SPEAKER_43']
+      Checking SPEAKER_43: first_start=680.7, range=[684.3, 717.0]
+      ❌ Out of range
+   ❌ No valid split points
+
+📍 Segment 86: [728.7-796.5] 67.8s, Type=music
+   ✅ Candidate for splitting (music/silence, 67.8s)
+   🔎 Found 5 overlapping speaker segments
+   📊 Speaker stats:
+      SPEAKER_43: 26.18s (first: 727.1)
+      SPEAKER_27: 0.20s (first: 732.6)
+   ✅ Major speakers: ['SPEAKER_43']
+      Checking SPEAKER_43: first_start=727.1, range=[731.7, 795.5]
+      ❌ Out of range
+   ❌ No valid split points
+
+📍 Segment 180: [1102.8-1377.4] 274.6s, Type=music
+   ✅ Candidate for splitting (music/silence, 274.6s)
+   🔎 Found 66 overlapping speaker segments
+   📊 Speaker stats:
+      SPEAKER_43: 98.53s (first: 1158.1)
+      SPEAKER_19: 16.22s (first: 1135.4)
+      SPEAKER_27: 3.61s (first: 1135.3)
+      SPEAKER_07: 0.54s (first: 1102.5)
+   ✅ Major speakers: ['SPEAKER_27', 'SPEAKER_19', 'SPEAKER_43']
+      Checking SPEAKER_27: first_start=1135.3, range=[1105.8, 1376.4]
+      ✅ Added split point at 1135.3
+      Checking SPEAKER_19: first_start=1135.4, range=[1105.8, 1376.4]
+      ✅ Added split point at 1135.4
+      Checking SPEAKER_43: first_start=1158.1, range=[1105.8, 1376.4]
+      ✅ Added split point at 1158.1
+   🔪 SPLITTING!
+      → Music: 1102.8-1135.3
+      → Music: 1135.4-1158.1
+      → Speech: 1158.1-1377.4
+
+📍 Segment 181: [1377.4-1408.2] 30.8s, Type=speech
+   ❌ Skip: Type is 'speech' (not music/silence)
+
+📍 Segment 185: [1416.8-1536.7] 119.9s, Type=music
+   ✅ Candidate for splitting (music/silence, 119.9s)
+   🔎 Found 45 overlapping speaker segments
+   📊 Speaker stats:
+      SPEAKER_43: 72.40s (first: 1413.6)
+      SPEAKER_39: 11.81s (first: 1467.4)
+      SPEAKER_42: 4.45s (first: 1513.2)
+      SPEAKER_10: 0.11s (first: 1514.8)
+      SPEAKER_22: 0.11s (first: 1487.8)
+   ✅ Major speakers: ['SPEAKER_43', 'SPEAKER_39', 'SPEAKER_42']
+      Checking SPEAKER_43: first_start=1413.6, range=[1419.8, 1535.7]
+      ❌ Out of range
+      Checking SPEAKER_39: first_start=1467.4, range=[1419.8, 1535.7]
+      ✅ Added split point at 1467.4
+      Checking SPEAKER_42: first_start=1513.2, range=[1419.8, 1535.7]
+      ✅ Added split point at 1513.2
+   🔪 SPLITTING!
+      → Music: 1416.8-1467.4
+      → Music: 1467.4-1513.2
+      → Speech: 1513.2-1536.7
+
+📍 Segment 186: [1536.7-1585.3] 48.6s, Type=speech
+   ❌ Skip: Type is 'speech' (not music/silence)
+
+📍 Segment 294: [2133.3-2233.3] 100.0s, Type=music
+   ✅ Candidate for splitting (music/silence, 100.0s)
+   🔎 Found 10 overlapping speaker segments
+   📊 Speaker stats:
+      SPEAKER_43: 40.99s (first: 2177.8)
+      SPEAKER_07: 1.38s (first: 2132.2)
+   ✅ Major speakers: ['SPEAKER_43']
+      Checking SPEAKER_43: first_start=2177.8, range=[2136.3, 2232.3]
+      ✅ Added split point at 2177.8
+   🔪 SPLITTING!
+      → Music: 2133.3-2177.8
+      → Speech: 2177.8-2233.3
+
+📍 Segment 295: [2233.3-2405.4] 172.1s, Type=music
+   ✅ Candidate for splitting (music/silence, 172.1s)
+   🔎 Found 25 overlapping speaker segments
+   📊 Speaker stats:
+      SPEAKER_43: 72.94s (first: 2232.2)
+      SPEAKER_07: 5.44s (first: 2400.6)
+   ✅ Major speakers: ['SPEAKER_43', 'SPEAKER_07']
+      Checking SPEAKER_43: first_start=2232.2, range=[2236.3, 2404.4]
+      ❌ Out of range
+      Checking SPEAKER_07: first_start=2400.6, range=[2236.3, 2404.4]
+      ✅ Added split point at 2400.6
+   🔪 SPLITTING!
+      → Music: 2233.3-2400.6
+      → Speech: 2400.6-2405.4
+
+📍 Segment 377: [2639.3-2848.2] 208.9s, Type=music
+   ✅ Candidate for splitting (music/silence, 208.9s)
+   🔎 Found 41 overlapping speaker segments
+   📊 Speaker stats:
+      SPEAKER_43: 144.79s (first: 2687.0)
+      SPEAKER_33: 31.50s (first: 2657.6)
+      SPEAKER_00: 1.88s (first: 2800.1)
+      SPEAKER_07: 1.71s (first: 2638.0)
+      SPEAKER_39: 0.95s (first: 2660.9)
+   ✅ Major speakers: ['SPEAKER_33', 'SPEAKER_43']
+      Checking SPEAKER_33: first_start=2657.6, range=[2642.3, 2847.2]
+      ✅ Added split point at 2657.6
+      Checking SPEAKER_43: first_start=2687.0, range=[2642.3, 2847.2]
+      ✅ Added split point at 2687.0
+   🔪 SPLITTING!
+      → Music: 2639.3-2657.6
+      → Music: 2657.6-2687.0
+      → Speech: 2687.0-2848.2
+
+📍 Segment 451: [3094.0-3251.1] 157.0s, Type=music
+   ✅ Candidate for splitting (music/silence, 157.0s)
+   🔎 Found 35 overlapping speaker segments
+   📊 Speaker stats:
+      SPEAKER_43: 58.24s (first: 3158.0)
+      SPEAKER_33: 12.31s (first: 3155.8)
+      SPEAKER_07: 12.26s (first: 3100.1)
+      SPEAKER_49: 3.12s (first: 3091.4)
+      SPEAKER_27: 0.18s (first: 3237.4)
+   ✅ Major speakers: ['SPEAKER_49', 'SPEAKER_07', 'SPEAKER_33', 'SPEAKER_43']
+      Checking SPEAKER_49: first_start=3091.4, range=[3097.0, 3250.1]
+      ❌ Out of range
+      Checking SPEAKER_07: first_start=3100.1, range=[3097.0, 3250.1]
+      ✅ Added split point at 3100.1
+      Checking SPEAKER_33: first_start=3155.8, range=[3097.0, 3250.1]
+      ✅ Added split point at 3155.8
+      Checking SPEAKER_43: first_start=3158.0, range=[3097.0, 3250.1]
+      ✅ Added split point at 3158.0
+   🔪 SPLITTING!
+      → Music: 3094.0-3100.1
+      → Music: 3100.1-3155.8
+      → Music: 3155.8-3158.0
+      → Speech: 3158.0-3251.1
+
+📍 Segment 452: [3251.1-3329.4] 78.3s, Type=music
+   ✅ Candidate for splitting (music/silence, 78.3s)
+   🔎 Found 12 overlapping speaker segments
+   📊 Speaker stats:
+      SPEAKER_33: 11.93s (first: 3251.2)
+      SPEAKER_43: 10.88s (first: 3254.0)
+      SPEAKER_27: 0.55s (first: 3276.0)
+      SPEAKER_55: 0.01s (first: 3320.2)
+   ✅ Major speakers: ['SPEAKER_33', 'SPEAKER_43']
+      Checking SPEAKER_33: first_start=3251.2, range=[3254.1, 3328.4]
+      ❌ Out of range
+      Checking SPEAKER_43: first_start=3254.0, range=[3254.1, 3328.4]
+      ❌ Out of range
+   ❌ No valid split points
+
+📍 Segment 453: [3329.4-3360.4] 31.0s, Type=silence
+   ✅ Candidate for splitting (music/silence, 31.0s)
+   🔎 Found 8 overlapping speaker segments
+   📊 Speaker stats:
+      SPEAKER_33: 18.05s (first: 3325.4)
+      SPEAKER_43: 12.34s (first: 3330.0)
+   ✅ Major speakers: ['SPEAKER_33', 'SPEAKER_43']
+      Checking SPEAKER_33: first_start=3325.4, range=[3332.4, 3359.4]
+      ❌ Out of range
+      Checking SPEAKER_43: first_start=3330.0, range=[3332.4, 3359.4]
+      ❌ Out of range
+   ❌ No valid split points
+
+📍 Segment 565: [3608.5-3758.9] 150.4s, Type=music
+   ✅ Candidate for splitting (music/silence, 150.4s)
+   🔎 Found 19 overlapping speaker segments
+   📊 Speaker stats:
+      SPEAKER_43: 115.38s (first: 3631.0)
+      SPEAKER_46: 4.72s (first: 3604.1)
+   ✅ Major speakers: ['SPEAKER_46', 'SPEAKER_43']
+      Checking SPEAKER_46: first_start=3604.1, range=[3611.5, 3757.9]
+      ❌ Out of range
+      Checking SPEAKER_43: first_start=3631.0, range=[3611.5, 3757.9]
+      ✅ Added split point at 3631.0
+   🔪 SPLITTING!
+      → Music: 3608.5-3631.0
+      → Speech: 3631.0-3758.9
+
+📍 Segment 567: [3762.5-3832.8] 70.3s, Type=music
+   ✅ Candidate for splitting (music/silence, 70.3s)
+   🔎 Found 8 overlapping speaker segments
+   📊 Speaker stats:
+      SPEAKER_43: 64.80s (first: 3742.6)
+      SPEAKER_07: 2.38s (first: 3830.3)
+      SPEAKER_27: 0.80s (first: 3812.7)
+   ✅ Major speakers: ['SPEAKER_43']
+      Checking SPEAKER_43: first_start=3742.6, range=[3765.5, 3831.8]
+      ❌ Out of range
+   ❌ No valid split points
+
+📍 Segment 951: [5160.6-5276.7] 116.0s, Type=music
+   ✅ Candidate for splitting (music/silence, 116.0s)
+   🔎 Found 25 overlapping speaker segments
+   📊 Speaker stats:
+      SPEAKER_36: 74.17s (first: 5170.9)
+      SPEAKER_43: 2.24s (first: 5239.4)
+      SPEAKER_19: 0.89s (first: 5228.1)
+   ✅ Major speakers: ['SPEAKER_36']
+      Checking SPEAKER_36: first_start=5170.9, range=[5163.6, 5275.7]
+      ✅ Added split point at 5170.9
+   🔪 SPLITTING!
+      → Music: 5160.6-5170.9
+      → Speech: 5170.9-5276.7
+
+📍 Segment 952: [5276.7-5329.7] 53.0s, Type=speech
+   ❌ Skip: Type is 'speech' (not music/silence)
+
+📍 Segment 1004: [5524.8-5588.8] 64.0s, Type=music
+   ✅ Candidate for splitting (music/silence, 64.0s)
+   🔎 Found 5 overlapping speaker segments
+   📊 Speaker stats:
+      SPEAKER_39: 44.08s (first: 5544.8)
+      SPEAKER_43: 16.36s (first: 5521.1)
+   ✅ Major speakers: ['SPEAKER_43', 'SPEAKER_39']
+      Checking SPEAKER_43: first_start=5521.1, range=[5527.8, 5587.8]
+      ❌ Out of range
+      Checking SPEAKER_39: first_start=5544.8, range=[5527.8, 5587.8]
+      ✅ Added split point at 5544.8
+   🔪 SPLITTING!
+      → Music: 5524.8-5544.8
+      → Speech: 5544.8-5588.8
+
+📍 Segment 1036: [5747.6-5805.7] 58.0s, Type=silence
+   ✅ Candidate for splitting (music/silence, 58.0s)
+   🔎 Found 5 overlapping speaker segments
+   📊 Speaker stats:
+      SPEAKER_37: 40.58s (first: 5767.6)
+      SPEAKER_07: 0.83s (first: 5747.4)
+   ✅ Major speakers: ['SPEAKER_37']
+      Checking SPEAKER_37: first_start=5767.6, range=[5750.6, 5804.7]
+      ✅ Added split point at 5767.6
+   🔪 SPLITTING!
+      → Music: 5747.6-5767.6
+      → Speech: 5767.6-5805.7
+
+📍 Segment 1064: [5900.9-5937.2] 36.3s, Type=speech
+   ❌ Skip: Type is 'speech' (not music/silence)
+
+📍 Segment 1089: [6015.8-6052.4] 36.6s, Type=silence
+   ✅ Candidate for splitting (music/silence, 36.6s)
+   🔎 Found 6 overlapping speaker segments
+   📊 Speaker stats:
+      SPEAKER_38: 39.15s (first: 6026.0)
+      SPEAKER_40: 5.98s (first: 6013.5)
+   ✅ Major speakers: ['SPEAKER_40', 'SPEAKER_38']
+      Checking SPEAKER_40: first_start=6013.5, range=[6018.8, 6051.4]
+      ❌ Out of range
+      Checking SPEAKER_38: first_start=6026.0, range=[6018.8, 6051.4]
+      ✅ Added split point at 6026.0
+   🔪 SPLITTING!
+      → Music: 6015.8-6026.0
+      → Speech: 6026.0-6052.4
+
+📍 Segment 1103: [6083.9-6138.8] 54.9s, Type=silence
+   ✅ Candidate for splitting (music/silence, 54.9s)
+   🔎 Found 9 overlapping speaker segments
+   📊 Speaker stats:
+      SPEAKER_38: 53.90s (first: 6071.1)
+      SPEAKER_27: 1.92s (first: 6131.0)
+      SPEAKER_19: 0.31s (first: 6118.7)
+   ✅ Major speakers: ['SPEAKER_38']
+      Checking SPEAKER_38: first_start=6071.1, range=[6086.9, 6137.8]
+      ❌ Out of range
+   ❌ No valid split points
+
+📍 Segment 1172: [6331.8-6542.5] 210.7s, Type=music
+   ✅ Candidate for splitting (music/silence, 210.7s)
+   🔎 Found 64 overlapping speaker segments
+   📊 Speaker stats:
+      SPEAKER_43: 53.80s (first: 6342.2)
+      SPEAKER_35: 35.36s (first: 6348.2)
+      SPEAKER_19: 15.86s (first: 6337.1)
+      SPEAKER_40: 8.96s (first: 6367.0)
+      SPEAKER_07: 0.92s (first: 6331.1)
+   ✅ Major speakers: ['SPEAKER_19', 'SPEAKER_43', 'SPEAKER_35', 'SPEAKER_40']
+      Checking SPEAKER_19: first_start=6337.1, range=[6334.8, 6541.5]
+      ✅ Added split point at 6337.1
+      Checking SPEAKER_43: first_start=6342.2, range=[6334.8, 6541.5]
+      ✅ Added split point at 6342.2
+      Checking SPEAKER_35: first_start=6348.2, range=[6334.8, 6541.5]
+      ✅ Added split point at 6348.2
+      Checking SPEAKER_40: first_start=6367.0, range=[6334.8, 6541.5]
+      ✅ Added split point at 6367.0
+   🔪 SPLITTING!
+      → Music: 6331.8-6337.1
+      → Music: 6337.1-6342.2
+      → Music: 6342.2-6348.2
+      → Music: 6348.2-6367.0
+      → Speech: 6367.0-6542.5
+
+📍 Segment 1225: [6709.3-6740.1] 30.9s, Type=silence
+   ✅ Candidate for splitting (music/silence, 30.9s)
+   🔎 Found 12 overlapping speaker segments
+   📊 Speaker stats:
+      SPEAKER_07: 18.14s (first: 6714.1)
+      SPEAKER_48: 1.17s (first: 6708.4)
+   ✅ Major speakers: ['SPEAKER_07']
+      Checking SPEAKER_07: first_start=6714.1, range=[6712.3, 6739.1]
+      ✅ Added split point at 6714.1
+   🔪 SPLITTING!
+      → Music: 6709.3-6714.1
+      → Speech: 6714.1-6740.1
+
+📍 Segment 1286: [6940.2-6974.8] 34.5s, Type=speech
+   ❌ Skip: Type is 'speech' (not music/silence)
+
+✅ Split 17 segments
+
+🔄 Calculating speaker ratios...
+
+✅ Saved: /mnt/home_dnlab/jhjung/radio/baechulsu/20241125/transcript/20241125_with_speaker_ratio.csv
+   Total segments: 1376
