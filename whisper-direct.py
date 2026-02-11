@@ -79,7 +79,7 @@ else:
     # 날짜(YYYYMMDD)만 입력받은 경우 (기본 설정)
     DATE = INPUT_ARG
     # ★ 주의: 본인 환경에 맞게 baechulsu 또는 jeongeunim 수정 필요 ★
-    BASE_DIR = f"/mnt/home_dnlab/jhjung/radio/baechulsu/{DATE}"
+    BASE_DIR = f"/mnt/home_dnlab/sypark/radio2/jeongeunim/{DATE}"
     AUDIO_FILE = f"{BASE_DIR}/mp3/{DATE}.mp3"
     OUTPUT_DIR = f"{BASE_DIR}/transcript"
 
@@ -118,27 +118,24 @@ print(f"Model: {WHISPER_MODEL_SIZE} | Language: {LANGUAGE} | VAD: {USE_VAD}")
 segments, info = model.transcribe(
     AUDIO_FILE,
     language=LANGUAGE,
-    beam_size=5,
-    best_of=5,
     
-    # [VAD] 0.5초 이상의 침묵은 무시 (Demucs로 음악이 지워진 구간 스킵용)
-    vad_filter=USE_VAD,
-    vad_parameters=dict(min_silence_duration_ms=500),
-
-
-    # [중요] 이전 문맥 참조 끄기 (음악 구간 반복 생성 방지)
-    condition_on_previous_text=False,
-
-    # [중요] 프롬프트 엔지니어링 (환각 억제)
-    initial_prompt="라디오 방송입니다. 음악을 제외한 모든 발화를 전사합니다.",
-
-    # [탐색] 인식이 잘 안 될 때 온도를 높여가며 재시도
-    temperature=[0.0, 0.2, 0.4, 0.6, 0.8, 1.0],
-
-    # [필터] 반복 패널티
-    repetition_penalty=1.2,
-    no_speech_threshold=0.6,
+    # [속도 최적화] beam_size를 5에서 2로 줄입니다. 
+    # A6000에서 5는 너무 신중해서 느립니다. 2 정도면 충분히 정확하고 속도는 2배 빨라집니다.
+    beam_size=2, 
     
+    # [정확도/속도] temperature를 리스트 대신 고정값으로 줍니다.
+    # 여러 온도를 다 시도하면 시간이 너무 많이 걸립니다. 0.0이 가장 표준적이고 빠릅니다.
+    temperature=0.0, 
+
+    vad_filter=True,
+    vad_parameters=dict(
+        min_silence_duration_ms=1000, 
+        speech_pad_ms=600             
+    ),
+
+    no_speech_threshold=0.3,         
+    initial_prompt="정은임의 영화음악 라디오 방송 전사입니다.",
+    condition_on_previous_text=True, 
     word_timestamps=True
 )
 
